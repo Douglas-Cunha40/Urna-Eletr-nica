@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <div class="candidate_data" id="candidate_22">
+                <img src="./images/mito.png" alt="Foto Bolsonaro">
+                <div class="infos">
+                    <h2>Candidato: <span> Jair Messias Bolsonaro</span></h2>
+                    <h2>Partido: <span>PSL (Partido Socialista Liberal)</span></h2>
+                </div>
+            </div>
+            <div class="candidate_data" id="candidate_13">
+                <img src="./images/lula.png" alt="Foto Lula">
+                <div class="infos">
+                    <h2>Candidato: <span> Luiz Inácio Lula da Silva</span></h2>
+                    <h2>Partido: <span>PT (Partido dos Trabalhadores)</span></h2>
+                </div>
+            </div>
+            <div class="legends">
+                <h3> 🟦22 - Jair Messias Bolsonaro</h3>
+                <h3> 🟥13 - Luiz Inácio Lula Da Silva</h3>
+            </div>
+            <div class="resultado">
+                <h4>Total de Votos: <span>10</span></h4>
+            </div>
+        </div>
+        <div class="btns_all">
+            <audio id="somClick" src="./Audio/som_urna.mp3"></audio>
+            <div class="img_text">
+                <img src="./images/republica.jpg" alt="Foto logo da república do Brasil">
+                <h1>justiça eleitoral</h1>
+            </div>
+            <div class="display_btns"> </div>
+            <div class="btns_numbers">
+                <div class="group_1">
+                    <button type="button" onclick="updateDisplay(this)">1</button>
+                    <button type="button" onclick="updateDisplay(this)">2</button>
+                    <button type="button" onclick="updateDisplay(this)">3</button>
+                </div>
+                <div class="group_2">
+                    <button type="button" onclick="updateDisplay(this)">4</button>
+                    <button type="button" onclick="updateDisplay(this)">5</button>
+                    <button type="button" onclick="updateDisplay(this)">6</button>
+                </div>
+                <div class="group_3">
+                    <button type="button" onclick="updateDisplay(this)">7</button>
+                    <button type="button" onclick="updateDisplay(this)">8</button>
+                    <button type="button" onclick="updateDisplay(this)">9</button>
+                </div>
+                <div class="group_4">
+                    <button type="button" onclick="updateDisplay(this)">0</button>
+                </div>
+                <div class="group_validations">
+                    <button id="val_branco" type="button" onclick="updateDisplay(this)">Branco</button>
+                    <button id="val_corrige" type="button" onclick="clearDisplay()">corrige</button>
+                    <button id="val_confirma" type="button">confirma</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
