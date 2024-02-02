@@ -91,7 +91,7 @@ body {
     color: #ff0000;
     font-weight: 900;
     margin-top: 30px;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .btns_all {
@@ -165,7 +165,6 @@ body {
     display: flex;
     gap: 30px;
     margin: 25px 0;
-    background-color: #333;
 }
 
 .group_validations #val_branco {
@@ -203,35 +202,95 @@ body {
     display: none;
 }
 
-/* Consulta de mídia para telas entre 980px e 1281px */
-/* Seu CSS existente... */
 
-/* Consulta de mídia para telas entre 980px e 1281px */
 @media only screen and (min-width: 980px) and (max-width: 1720px) {
     .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .display .legends {
-        margin-left: 0;
-    }
-
-    .display .candidate_data {
-        margin-left: 0;
-    }
-
-    .btns_all {
-        margin-right: 30px;
-    }
-
-    .btns_all .img_text {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 20px; 
     }
 
     .display {
-        order: 3; /* Mover o display para o final da ordem na tela menor */
+        order: 1;
+        width: 60%; 
+        margin-right: 20px; 
+        position: relative;
+    }
+
+    .display .candidate_data {
+        margin-left: -20px;
+        display: flex;
+        display: none;
+    }
+
+    .display .candidate_data img{
+        height: 300px;
+        width: 300px;
+        margin-top: -40px;
+    }
+
+    .infos{
+        margin-top: -70px;
+    }
+
+    .display .candidate_data .infos h2{
+        font-size: 1.4rem;
+    }
+
+    .btns_all {
+        order: 3;
+        width: 45%; 
+        margin-left: 20px; 
+    }
+
+    .img_text img{
+        margin-left: 5px;
+    }
+
+    .group_validations{
+        background: transparent;
+    }
+
+    .group_validations #val_branco {
+        background-color: #fff;
+        padding: 20px 15px;
+        width: 100px;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .group_validations #val_corrige {
+        background-color: #d46b3d;
+        padding: 20px 15px;
+        width: 100px;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .group_validations #val_confirma {
+        background-color: #22cc72;
+        padding: 20px 15px;
+        width: 100px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+    .legends{
+        display: flex;
+        position: absolute;
+        right: 200px;
+        width: 400px;
     }
 }

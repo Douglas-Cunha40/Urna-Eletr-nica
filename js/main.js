@@ -115,9 +115,9 @@ function displayResultado() {
 
     let mensagemResultado = document.createElement('p');
     if (votosCandidato22 > votosCandidato13) {
-        mensagemResultado.innerHTML = `O vencedor é <span style="color: #28dd00;">Jair Messias Bolsonaro</span> com ${votosCandidato22} votos.`;
+        mensagemResultado.innerHTML = `O vencedor é <span style="color: #28dd00;">Jair Messias Bolsonaro</span>`;
     } else if (votosCandidato13 > votosCandidato22) {
-        mensagemResultado.innerHTML = `O vencedor é <span style="color: #28dd00;">Luiz Inácio Lula da Silva</span> com ${votosCandidato13} votos.`;
+        mensagemResultado.innerHTML = `O vencedor é <span style="color: #28dd00;">Luiz Inácio Lula da Silva</span>`;
     } else {
         mensagemResultado.innerHTML = `Empate! Ambos os candidatos têm <span style="color: blue;">${votosCandidato22}</span> votos.`;
     }
