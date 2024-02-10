@@ -111,7 +111,7 @@ function displayResultado() {
     mensagemVotos.style.marginBottom = '15px';  
     mensagemVotos.innerHTML = `<span style="color: blue;">Jair Messias Bolsonaro</span> recebeu: <span style="color: blue;">${votosCandidato22}</span> votos 
     <br><span style="color: red;">Luiz Inácio Lula da Silva</span> recebeu: <span style="color: red;">${votosCandidato13}</span> votos 
-    <br>Votos em branco: <span style="color: green;">${votosBranco}</span> votos`;
+    <br><br>Votos em branco: <span style="color: green;">${votosBranco}</span> votos`;
 
     let mensagemResultado = document.createElement('p');
     if (votosCandidato22 > votosCandidato13) {
